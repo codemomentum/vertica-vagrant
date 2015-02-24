@@ -16,3 +16,7 @@ dpkg -i /home/vagrant/vertica.deb
 /opt/vertica/sbin/install_vertica --record-config /home/vagrant/vertica.cfg --hosts 127.0.0.1 --license CE --accept-eula --dba-user-password pass
 /opt/vertica/sbin/install_vertica --config-file /home/vagrant/vertica.cfg
 
+
+dpkg -i /home/vagrant/vertica-hdfs.deb
+vsql -f /opt/vertica/packages/hdfs_connectors/install.sql
+
